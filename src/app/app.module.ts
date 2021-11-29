@@ -33,6 +33,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { DATE_FORMAT } from './utils/custom_date_format';
 import { MatTableDataSource } from '@angular/material/table';
 import { CategoriesComponent } from './pages/post/categories/categories.component';
+import { CategoriesListComponent } from './pages/post/categories-list/categories-list.component';
 
 registerLocaleData(it);
 
@@ -48,6 +49,7 @@ registerLocaleData(it);
     UserListComponent,
     InfoListComponent,
     CategoriesComponent,
+    CategoriesListComponent,
   ],
   imports: [
     MatSidenavModule,

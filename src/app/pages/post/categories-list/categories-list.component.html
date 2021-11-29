@@ -1,0 +1,18 @@
+<h2>Categories</h2>
+
+<mat-list *ngFor="let cat of categories; let i = index" [attr.data-index]="i">
+    
+        <mat-list-item>
+            <p class="title-cat" mat-line>
+                {{cat.title}}
+            </p>
+            <p mat-line>
+                <a routerLink="/categories/{{cat.id}}">
+                    Modifica
+                </a>    
+            </p>
+            <button mat-raised-button color="accent" style="float: right;" (click)="deletePost(i)" >Elimina</button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    
+</mat-list> 

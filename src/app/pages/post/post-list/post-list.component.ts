@@ -11,17 +11,17 @@ import { MatTableDataSource } from '@angular/material/table';
 export class PostListComponent implements OnInit {
 
   posts: Post[] = [];
-  displayedColumns = [ 'position', 'name'];
+
  
 
 
   constructor(private postService: PostService) { }
 
   ngOnInit(): void {
-    this.getPost()
+    this.getPosts()
   }
 
-  getPost() {
+  getPosts() {
     this.postService.getListPost().subscribe(posts => 
       this.posts = posts
     )

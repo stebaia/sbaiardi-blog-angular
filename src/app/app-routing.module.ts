@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InfoListComponent } from './pages/info-list/info-list.component';
+import { CategoriesListComponent } from './pages/post/categories-list/categories-list.component';
 import { CategoriesComponent } from './pages/post/categories/categories.component';
 import { PostListComponent } from './pages/post/post-list/post-list.component';
 import { PostComponent } from './pages/post/post/post.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'post-list', component: PostListComponent },
   { path: 'categories', component: CategoriesComponent },
   { path: 'categories/:id', component: CategoriesComponent },
+  { path: 'categories-list', component: CategoriesListComponent },
   { path: 'user', component: UserComponent },
   { path: 'user-list', component: UserListComponent }
 ];

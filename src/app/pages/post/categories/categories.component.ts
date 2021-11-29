@@ -45,5 +45,6 @@ export class CategoriesComponent implements OnInit {
       title: title,
       created_at: formatDate(this.currentDate, 'yyyy-MM-dd', 'it-IT'),
     }
+    console.warn(cat);
   }
 }

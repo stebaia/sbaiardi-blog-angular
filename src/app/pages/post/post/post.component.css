@@ -1,0 +1,45 @@
+.editext{
+    padding-left: 12px;
+    margin-top:6px;
+    margin-bottom: 12px; 
+    border-radius: 3px;
+    border-color: #D0C8CB;
+    border-width: 1px;
+    height: 40px;
+    width: 100%;
+}
+.label{
+    width: 100%;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    margin: 10px;
+    flex: 50%;
+}
+
+.editextPub{
+    margin-left: 30px;
+    margin-top: 50px;
+    padding-left: 12px;
+    margin-top:6px;
+    margin-bottom: 12px; 
+    border-radius: 3px;
+    border-color: #D0C8CB;
+    border-width: 1px;
+    height: 40px;
+    width: 50%;
+}
+.divedit{
+    margin-top: 20px;
+}
+
+:host ::ng-deep .ck-editor__editable_inline {
+    min-height: 500px;
+}
+

@@ -1,0 +1,55 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+    <div class="title">
+      <label class="label" for="title">Title: </label>
+      <input id="title" class="editext" type="text" formControlName="title">
+    </div>
+    
+    <div class="row">
+      <div class="column">
+        <label class="label" for="subtitle">Subtitle: </label>
+        <input id="subtitle" class="editext" type="text" formControlName="subtitle">
+      </div>
+      <div class="column">
+        <div  class="mat-select">
+          <mat-label class="label">Categories</mat-label>
+          <mat-select formControlName="categories" multiple>
+            <mat-option *ngFor="let category of categories" [value]="category">
+              <span>{{category}}</span>
+            </mat-option>
+          </mat-select>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="row">
+      <div class="column">
+        <label class="label" for="snippet">Snippet: </label>
+        <input class="editext" id="snippet" type="text" formControlName="snippet">
+      </div>
+      <div class="column">
+          <div class="divedit">
+            <label class="label" for="is_published">Is Published? </label>
+            <input id="is_published" type="checkbox" formControlName="is_published">
+            <input class="editextPub" matInput [matDatepicker]="dob" placeholder="Publication date:" formControlName="published_at">
+            <mat-datepicker-toggle class="calendar" matSuffix [for]="dob"></mat-datepicker-toggle>
+            <mat-datepicker #dob></mat-datepicker>
+          </div>
+         
+      </div>
+    </div>
+
+    
+
+    
+      
+   
+
+    <ckeditor [editor]="Editor" formControlName="content"></ckeditor>
+    <br/>
+    <button type="submit" mat-raised-button color="accent" style="float: right;" [disabled]="!profileForm.valid">Submit</button>
+
+  </form>
+

@@ -1,0 +1,7 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="title">
+        <label class="label" for="title">Title: </label>
+        <input id="title" class="editext" type="text" formControlName="title">
+      </div>
+    <button type="submit" mat-raised-button color="accent" style="float: right;" [disabled]="!profileForm.valid">Submit</button>
+</form>

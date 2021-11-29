@@ -1,0 +1,68 @@
+{"post":[{
+    "id": 43,
+    "title": "primo post di prova modificatooooo cate",
+    "subtitle": "sottotitolo del primo post di prova",
+    "snippet": "snippet",
+    "content": "contenuto primo post",
+    "created_at": "08/09/21",
+    "deleted_at": "",
+    "published_at": "1633344167073",
+    "is_published": true,
+    "last_modified": "1633344167073",
+    "url_youtube": "",
+    "author": {
+        "id": 1,
+        "username": "owl"
+    },
+    "categories": [
+        {
+            "id": 1,
+            "title": "categoria di prova 2",
+            "description": "description di prova",
+            "created_at": "08/09/21",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "title": "cat 1",
+            "description": "Ridley",
+            "created_at": "",
+            "deleted_at": ""
+        } 
+    ]
+},
+{
+    "id": 44,
+    "title": "primo post di prova modificatooooo cate",
+    "subtitle": "sottotitolo del secondo post di prova",
+    "snippet": "snippet",
+    "content": "contenuto secondo post",
+    "created_at": "08/09/21",
+    "deleted_at": "",
+    "published_at": "1633344167073",
+    "is_published": true,
+    "last_modified": "1633344167073",
+    "url_youtube": "",
+    "author": {
+        "id": 1,
+        "username": "owl"
+    },
+    "categories": [
+        {
+            "id": 1,
+            "title": "categoria di prova 2",
+            "description": "description di prova",
+            "created_at": "08/09/21",
+            "deleted_at": ""
+        },
+        {
+            "id": 2,
+            "title": "cat 1",
+            "description": "Ridley",
+            "created_at": "",
+            "deleted_at": ""
+        } 
+    ]
+}
+]
+}
